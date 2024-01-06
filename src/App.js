@@ -36,6 +36,7 @@ function App() {
   
   return (
     <div className="calculator">
+      <h1>Calculator</h1>
       <input type="text" value={input} readOnly label="Calculator Input" />
       <div className="buttons">
         <button tabIndex="0" onClick={() => handleClick('1')}>1</button>
