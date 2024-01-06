@@ -30,6 +30,9 @@ function App() {
       handleClick(e.key);
     } else if (e.key === 'Backspace' || e.key === 'Delete') {
       setInput((prevInput) => prevInput.slice(0, -1));
+    } else if (e.key.toLowerCase() === 'c') {
+      setInput('');
+      setResult('');
     }
   }, [handleClick]);
 
