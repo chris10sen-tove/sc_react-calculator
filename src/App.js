@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="calculator">
       <h1>Calculator</h1>
-      <input type="text" value={input} readOnly aria-label="Calculator Input" />
+      <input type="text" value={input} label="Calculator Input" />
       <div className="buttons">
         <button
         tabIndex="0"
