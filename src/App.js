@@ -50,10 +50,12 @@ function App() {
   }, [handleKeyDown]);  
   
   return (
-    <div className="calculator">
+    <div role="application" className="calculator">
       <h1>Calculator</h1>
-      <input type="text" value={input} label="Calculator Input" />
-      <div className="buttons">
+      <div role="region">
+        <input type="text" value={input} label="Calculator Input" />
+      </div>
+      <div role="region" className="buttons">
         <button
         tabIndex="0"
         onClick={() => handleClick('1')}
