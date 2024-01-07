@@ -37,6 +37,10 @@ button:focus {
   box-shadow: 0 0 0 2px #0e28a8;
 }
 
+button:hover {
+  background-color: #a93226; /* Darker red on hover */
+}
+
 .result {
   margin-top: 10px;
   font-size: 1.5em;
