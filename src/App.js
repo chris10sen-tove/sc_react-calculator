@@ -25,7 +25,7 @@ function App() {
   const handleKeyDown = useCallback((e) => {
     if (
       (e.key >= '0' && e.key <= '9') ||
-      ['+', '-', '*', '/', '=', '.', 'C'].includes(e.key)
+      ['+', '-', 'x', '/', '=', '.', 'C'].includes(e.key)
     ) {
       handleClick(e.key);
     } else if (e.key === 'Backspace' || e.key === 'Delete') {
@@ -33,6 +33,8 @@ function App() {
     } else if (e.key.toLowerCase() === 'c') {
       setInput('');
       setResult('');
+    } else if (e.key === 'X' || e.kay === 'x' || e.key === '*') {
+      handleClick('x');
     }
   }, [handleClick]);
 
@@ -144,11 +146,11 @@ function App() {
         <button
         tabIndex="0"
         label="Multiply"
-        onClick={() => handleClick('*')}
-        onFocus={() => handleButtonFocus('*')}
-        className={focusedButton === '*' ? 'focused' : ''}
+        onClick={() => handleClick('x')}
+        onFocus={() => handleButtonFocus('x')}
+        className={focusedButton === 'x' ? 'focused' : ''}
         >
-          *
+          ×
         </button>
         <button
         tabIndex="0"
